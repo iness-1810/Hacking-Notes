@@ -1,6 +1,4 @@
-# First tips
-
-### How to connect to a VPN
+### Como conectarse a una vpn
 
 `sudo openvpn ~/Descargas/tryhackme/tryhackme_ovpn/nyx.06.ovpn` 
 
@@ -30,5 +28,6 @@ RAM: si trabajamos con la tarjeta RAM normalmente van a ser capturas
 .evtx: los archivos .evtx (Event Log XML) son un formato de registro de eventos utilizado por Microsoft Windows, almacenan información sobre actividad, seguridad y aplicaciones.
 
 .ELF: binario en Linux
+
 
 
