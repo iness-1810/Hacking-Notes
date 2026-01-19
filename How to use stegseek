@@ -1,0 +1,13 @@
+# Stego
+
+
+
+## Stego Steps
+
+🌟If you download stegseek, it will give you a wordlist: rockyou.txt, which is a document containing many passwords. This can be used to decode a document using brute force.
+However, this document may be presented as rockyou.txt.gz, where gz is another type of Zip file for Linux. To unlock zip files, you need to be a super admin (with sudo su) and run the gunzip command along with the file name.
+
+1. Once you've done that, you can try with the command stegseek --crack -sf filename.jpg -wl (this will inspect a wordlist file) rockyou.tx. It's important to be in the same directory as the file you're going to crack.
+2. A passphrase will appear and unlock the file. This is a password.
+3. With that password, you can unlock the hidden files using the command stegseek --crack -sf filename.jpg -p password.
+4. A new file will appear in the folder where the original file was located. Try ls to inspect it or cat if it is a file to read it.
