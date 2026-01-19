@@ -4,30 +4,31 @@
 
 `sudo openvpn ~/Descargas/tryhackme/tryhackme_ovpn/nyx.06.ovpn` 
 
-### Linux distributions
+### Distribuciones Linux
 
 - kali
 - parrot
 - ubuntu
 
-### **Unzip, read files, docker...**
+### Unzip, read files, docker...
 
 | command | file type | +details | arguments |
 | --- | --- | --- | --- |
 | evtxexport | evtx |  |  |
 | gunzip | .gz |  |  |
-| unzip | .zip | to decompress a zip file and dump its contents into the directory of your choice. |  -d /path/to/destination directory:  |
+| unzip | .zip | para descomprimir un archivo zip y volcar su contenido en el directorio de elección. |  `-d /ruta/del/directorio`  |
 | docker-compose |  | run docker |  |
 
-### **File types**
+### Tipos de archivos
 
-Log: these are log files containing everything that happens.
+Log: son archivos de registro con todo lo que ocurre
 
-RAM: if we work with RAM cards, these will normally be screenshots.
+RAM: si trabajamos con la tarjeta RAM normalmente van a ser capturas
 
-.gz: gunzip file.
+.gz: archivo gunzip
 
-.evtx: .evtx (Event Log XML) files are an event log format used by Microsoft Windows to store information about activity, security, and applications.
+.evtx: los archivos .evtx (Event Log XML) son un formato de registro de eventos utilizado por Microsoft Windows, almacenan información sobre actividad, seguridad y aplicaciones.
 
-.ELF: binary in Linux.
+.ELF: binario en Linux
+
 
