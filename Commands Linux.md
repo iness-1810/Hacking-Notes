@@ -52,7 +52,7 @@
 | pwd | which directory you are in | print working directory |  |
 | pwndbg | to analyze a binary dynamically |  | `b <function_name>` set a breakpoint in a function `finish` end the execution of the function you are running `n` to run the functions one by one `c` continue execution `q` exit |
 | respond | If I am on Windows on a local network for a service and respond is active, it tells you what it is and to connect to it |  |  |
-| rm | delete a file | dir for directories | -r to also remove everything inside |
+| rm | delete a file | dir for directories | -rf to also remove everything inside |
 | scp | copy files from one machine to another |  |  |
 | ssh | open a remote connection from one machine to another |  | user@ip (ip is the IP address we want to reach) |
 | steghide embed | embed info inside another file |  |  |
