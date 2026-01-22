@@ -25,7 +25,7 @@ MongoDB
 
 https://www.w3schools.com/mongodb/mongodb_query_operators.php
 
-inyectar operadores adicionales : `Users.find({$and: [{username:"u"},{password:{$ne: "u"}}]})`
+inyect additional operators : `Users.find({$and: [{username:"u"},{password:{$ne: "u"}}]})`
 
 ### Command injection
 
